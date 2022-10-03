@@ -1,4 +1,4 @@
-import{n as r}from"./nhost.f3e5aa6b.js";import{s as d,a as l,i as u}from"./auth.9e2c3c44.js";import{d as s,c}from"./helper.f1ad4d29.js";const p=document.getElementById("signOutForm"),m=async e=>{e.preventDefault(),await d(),window.location.href=l};p.addEventListener("submit",m);window.onload=async()=>{await u()?await w():window.location.href="login.html"};const w=async()=>{const e=s.gql`
+import{n as r}from"./nhost.54d3fc9b.js";import{s as d,a as l,i as u}from"./auth.cd7de584.js";import{d as s,c}from"./helper.033245c7.js";const p=document.getElementById("signOutForm"),m=async e=>{e.preventDefault(),await d(),window.location.href=l};p.addEventListener("submit",m);window.onload=async()=>{await u()?await w():window.location.href="login.html"};const w=async()=>{const e=s.gql`
    query MyQuery {
       projects(order_by: {id: desc}) {
          id

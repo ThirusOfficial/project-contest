@@ -1,0 +1,1 @@
+import{n}from"./nhost.54d3fc9b.js";const o="/admin/index.html",c="/admin/login.html",e=async({email:s,password:t})=>await n.auth.signIn({email:s,password:t}),r=async()=>{await n.auth.signOut()},u=async()=>await n.auth.isAuthenticatedAsync();export{c as a,o as b,e as c,u as i,r as s};

@@ -1,4 +1,4 @@
-import{n as s}from"./nhost.f3e5aa6b.js";import{d as i,c as m}from"./helper.f1ad4d29.js";window.onload=async()=>{u()};const u=async()=>{const e=await f();e.length!=0?w(e[0]):y()},n=document.getElementById("form"),o=n.querySelector("button"),c=document.querySelector("#form-section"),r=document.querySelector("#winner-section"),p=async e=>{e.preventDefault();const t=new FormData(n),a=Object.fromEntries(t.entries());o.innerHTML="Processing...";const l=i.gql`
+import{n as s}from"./nhost.54d3fc9b.js";import{d as i,c as m}from"./helper.033245c7.js";window.onload=async()=>{u()};const u=async()=>{const e=await f();e.length!=0?w(e[0]):y()},n=document.getElementById("form"),o=n.querySelector("button"),c=document.querySelector("#form-section"),r=document.querySelector("#winner-section"),p=async e=>{e.preventDefault();const t=new FormData(n),a=Object.fromEntries(t.entries());o.innerHTML="Processing...";const l=i.gql`
    mutation MyMutation($title: String, $description: String, $link: String) {
       insert_projects(objects: {title: $title, description: $description, link: $link}) {
         affected_rows
